@@ -18,31 +18,25 @@
     <div id="categoryPage">
         <h2>Select a Category & Difficulty Level:</h2>
         <select id="categories">
-            <option value="0">Any Category</option>
-            <option>Hello</option>
+            <option value="0" selected>Any Category</option>
         </select>
         <br>
         <select id="difficulty">
-            <option value="0">Any Difficulty</option>
-            <option>Hello</option>
+            <option value="0" selected>Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
         </select>
         <br>
         <button id="quizStart">Go to Quiz</button>
     </div>
 
-    <div id="finalPage">
-        <h1>Your score was: 10 😎</h1>
-        <h2 id="playAgainText">Wanna Play Again?</h2>
-        <br>
-        <button id="playAgain">Play Again</button>
-    </div>
-
     <div id="questionPage">
         <div id="questionPart">
-            <h2>Question 1 out of 10.</h2>
-            <h2>Correct!</h2>
+            <h2 id="QNumber">Question 1 out of 10.</h2>
+            <h2 id="answerState"></h2>
             <br>
-            <p>What is your Name?</p>
+            <p id="question">What is your Name?</p>
         </div>
         <div id="answersPart">
             <div class="answer" id="answer1">1</div>
@@ -52,6 +46,13 @@
 
             <button id="nextQuestion">Next Question</button>
         </div>
+    </div>
+
+    <div id="finalPage">
+        <h1>Your score was: 10 😎</h1>
+        <h2 id="playAgainText">Wanna Play Again?</h2>
+        <br>
+        <button id="playAgain">Play Again</button>
     </div>
 
     <script src="./script.js"></script>
