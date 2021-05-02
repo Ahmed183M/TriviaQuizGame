@@ -107,6 +107,7 @@ body {
 
 .answer:hover {
     background-color: lightgrey;
+    cursor: pointer;
 }
 
 #nextQuestion {
