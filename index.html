@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="landingPage">
+        <h1>Take a Trivia Quiz!</h1>
+        <button id="quizGo">Go to Quiz</button>
+    </div>
+
+    <div id="categoryPage">
+        <h2>Select a Category & Difficulty Level:</h2>
+        <select id="categories">
+            <option value="0">Any Category</option>
+            <option>Hello</option>
+        </select>
+        <br>
+        <select id="difficulty">
+            <option value="0">Any Difficulty</option>
+            <option>Hello</option>
+        </select>
+        <br>
+        <button id="quizStart">Go to Quiz</button>
+    </div>
+
+    <div id="finalPage">
+        <h1>Your score was: 10 😎</h1>
+        <h2 id="playAgainText">Wanna Play Again?</h2>
+        <br>
+        <button id="playAgain">Play Again</button>
+    </div>
+
+    <div id="questionPage">
+        <div id="questionPart">
+            <h2>Question 1 out of 10.</h2>
+            <h2>Correct!</h2>
+            <br>
+            <p>What is your Name?</p>
+        </div>
+        <div id="answersPart">
+            <div class="answer" id="answer1">1</div>
+            <div class="answer" id="answer2">2</div>
+            <div class="answer" id="answer3">3</div>
+            <div class="answer" id="answer4">4</div>
+
+            <button id="nextQuestion">Next Question</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

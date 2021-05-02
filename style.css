@@ -1,0 +1,112 @@
+html,
+body {
+    background-image: url("./Background.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Arial;
+}
+
+#landingPage,
+#categoryPage,
+#finalPage {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 150px;
+    width: 500px;
+    height: 350px;
+    background-color: antiquewhite;
+    border: 3px black dotted;
+    border-radius: 25px;
+}
+
+#quizGo,
+#quizStart,
+#playAgain {
+    width: 100px;
+    height: 80px;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+#quizGo,
+#quizStart,
+#playAgain:hover {
+    background-color: tan;
+    color: white;
+}
+
+#categories,
+#difficulty {
+    width: 75%;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#questionPart>h2 {
+    display: inline-block;
+}
+
+#questionPage {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 750px;
+    background-color: wheat;
+    border: 3px black dotted;
+    border-radius: 25px;
+}
+
+#questionPart {
+    height: 40%;
+    width: 100%;
+}
+
+#answersPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.answer {
+    width: 75%;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+    line-height: 50px;
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+
+.answer:hover {
+    background-color: lightgrey;
+}
+
+#nextQuestion {
+    width: 200px;
+    height: 80px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#nextQuestion:hover {
+    background-color: tan;
+    color: white;
+}
