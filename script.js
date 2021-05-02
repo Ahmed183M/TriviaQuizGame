@@ -91,6 +91,7 @@ const startQuiz = () => {
         let score = 0;
         let selectedAnswer = 0;
         const questionPreviewer = () => {
+            answerState.innerHTML = "";
             answer1.style.backgroundColor = "white";
             answer1.style.color = "black";
             answer2.style.backgroundColor = "white";
@@ -145,9 +146,13 @@ const startQuiz = () => {
                             if (selectedAnswer != listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer1.style.backgroundColor = "red";
                                 answer1.style.color = "white";
+                                answerState.innerHTML = "False!";
+                                answerState.style.color = "red";
                             } else if (selectedAnswer == listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer1.style.backgroundColor = "green";
                                 answer1.style.color = "white";
+                                answerState.innerHTML = "Correct!";
+                                answerState.style.color = "green";
                                 score++;
                             }
 
@@ -173,9 +178,13 @@ const startQuiz = () => {
                             if (selectedAnswer != listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer2.style.backgroundColor = "red";
                                 answer2.style.color = "white";
+                                answerState.innerHTML = "False!";
+                                answerState.style.color = "red";
                             } else if (selectedAnswer == listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer2.style.backgroundColor = "green";
                                 answer2.style.color = "white";
+                                answerState.innerHTML = "Correct!";
+                                answerState.style.color = "green";
                                 score++;
                             }
 
@@ -201,9 +210,13 @@ const startQuiz = () => {
                             if (selectedAnswer != listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer3.style.backgroundColor = "red";
                                 answer3.style.color = "white";
+                                answerState.innerHTML = "False!";
+                                answerState.style.color = "red";
                             } else if (selectedAnswer == listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer3.style.backgroundColor = "green";
                                 answer3.style.color = "white";
+                                answerState.innerHTML = "Correct!";
+                                answerState.style.color = "green";
                                 score++;
                             }
 
@@ -229,9 +242,13 @@ const startQuiz = () => {
                             if (selectedAnswer != listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer4.style.backgroundColor = "red";
                                 answer4.style.color = "white";
+                                answerState.innerHTML = "False!";
+                                answerState.style.color = "red";
                             } else if (selectedAnswer == listOfAnswers.allAnswers()[counter].correctAnswer) {
                                 answer4.style.backgroundColor = "green";
                                 answer4.style.color = "white";
+                                answerState.innerHTML = "Correct!";
+                                answerState.style.color = "green";
                                 score++;
                             }
 
