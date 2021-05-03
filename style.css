@@ -57,7 +57,7 @@ body {
     border-radius: 5px;
 }
 
-#questionPart>h2 {
+#questionPart h2 {
     display: inline-block;
 }
 
@@ -98,6 +98,7 @@ body {
 .answer {
     width: 75%;
     height: 50px;
+    color: black;
     background-color: white;
     margin-bottom: 10px;
     line-height: 50px;
@@ -107,6 +108,27 @@ body {
 
 .answer:hover {
     background-color: lightgrey;
+    cursor: pointer;
+}
+
+.False {
+    background-color: red;
+    color: white;
+}
+
+.False:hover {
+    background-color: red;
+    color: white;
+}
+
+.True {
+    background-color: green;
+    color: white;
+}
+
+.True:hover {
+    background-color: green;
+    color: white;
 }
 
 #nextQuestion {
